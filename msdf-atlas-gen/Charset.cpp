@@ -20,6 +20,10 @@ void Charset::remove(unicode_t cp) {
     codepoints.erase(cp);
 }
 
+bool Charset::contains(unicode_t cp) {
+    return codepoints.find(cp) != codepoints.end();
+}
+
 size_t Charset::size() const {
     return codepoints.size();
 }

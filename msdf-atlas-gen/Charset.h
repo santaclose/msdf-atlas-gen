@@ -18,6 +18,7 @@ public:
     void add(unicode_t cp);
     /// Removes a codepoint
     void remove(unicode_t cp);
+    bool contains(unicode_t cp);
 
     size_t size() const;
     bool empty() const;

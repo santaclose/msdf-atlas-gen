@@ -23,6 +23,17 @@ public:
     void put(int x, int y, const msdfgen::BitmapConstRef<S, N> &subBitmap);
     void get(int x, int y, const msdfgen::BitmapRef<T, N> &subBitmap) const;
 
+    inline int getWidth()
+    {
+        int out = bitmap.width();
+        return out;
+    }
+    inline int getHeight()
+    {
+        int out = bitmap.height();
+        return out;
+    }
+
 private:
     msdfgen::Bitmap<T, N> bitmap;
 
